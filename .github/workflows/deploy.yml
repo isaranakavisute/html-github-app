@@ -23,4 +23,4 @@ jobs:
         run: |
           echo "Starting deployment..."
           sshpass -p 5fgFGi471b ssh -p 17177 -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no mydeploy@www.mydeploymentdomain.com "cd /home/mydeploy && git pull origin main"
-          echo "Deployment completed or not."
+          echo "Deployment completed."
