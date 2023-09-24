@@ -19,7 +19,7 @@ jobs:
           echo "${{ secrets.SSH_DEPLOY_KEY }}" > C:\Users\USER\.ssh\id_ed_25519
           chmod 600 C:\Users\USER\.ssh\id_ed_25519
           ssh-keyscan -t rsa github.com >> C:\Users\USER\.ssh\known_hosts
-          echo "Set up SSH key is completed or not"
+          echo "Set up SSH key is completed"
       - name: Deploy to server
         run: |
           echo "Starting deployment..."
