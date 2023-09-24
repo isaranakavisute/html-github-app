@@ -18,6 +18,7 @@ jobs:
           echo "${{ secrets.SSH_DEPLOY_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          echo "Set up SSH key is completed"
       - name: Deploy to server
         run: |
           echo "Starting deployment..."
