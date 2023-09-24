@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Set up SSH key
         run: |
-          mkdir -p ~/.ssh
+          mkdir -p C:\Users\USER\.ssh
           echo "${{ secrets.SSH_DEPLOY_KEY }}" > C:\Users\USER\.ssh\id_ed_25519
           chmod 600 C:\Users\USER\.ssh\id_ed_25519
           ssh-keyscan -t rsa github.com >> C:\Users\USER\.ssh\known_hosts
