@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to server
         run: |
           echo "Starting deployment..."
-          ssh -i C:\Users\USER\.ssh\id_ed25519 -o StrictHostKeyChecking=no user@192.168.1.38  "cd\Users\USER\ && git pull origin main"
+          ssh user@192.168.1.38  "cd\Users\USER\ && git pull origin main"
           echo "Deployment completed."
 
           
