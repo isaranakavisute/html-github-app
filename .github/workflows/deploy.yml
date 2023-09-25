@@ -22,8 +22,8 @@ jobs:
         run: |
           echo "Starting deployment..."
           cd \Users\USER\
-          git clone git@github.com:isaranakavisute/html-github-app.git
-          cd html-github-app
+          git clone git@github.com:isaranakavisute/html-github-app.git html-github-app1
+          cd html-github-app1
           git pull origin main
           echo "Deployment completed."
 
