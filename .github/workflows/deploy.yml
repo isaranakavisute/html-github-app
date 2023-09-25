@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to server
         run: |
           echo "Starting deployment..."
-          cd\Users\USER\
+          cd \Users\USER\
           git pull origin main
           echo "Deployment completed."
 
